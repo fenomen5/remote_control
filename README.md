@@ -83,7 +83,7 @@ class Light {
 2. Implement remote control classes based on the singleton pattern
 3. Provide an opportunity for the future adding actions conveniently (without rewriting much code)  
 The result has to be represented with a CLI program that allows performing the following operations:
-  3.1 Display the list of all available devices 
-  3.2 Setup a certain button for an operation (by providing button number and device class name)
-  3.3 Perform on/off operation of pressing a button with an appropriate message indicating that the button has been pressed
-  3.4 Undo the last action
+  * 3.1 Display the list of all available devices 
+  * 3.2 Setup a certain button for an operation (by providing button number and device class name)
+  * 3.3 Perform on/off operation of pressing a button with an appropriate message indicating that the button has been pressed
+  * 3.4 Undo the last action

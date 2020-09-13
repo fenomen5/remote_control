@@ -6,68 +6,73 @@ Code challenge of using design patterns from https://weblab.technology/
 There is a remote control given that communicates with house devices by radio channel. Every device has its own unique set of methods.
 Device Examples
 
-Turn on/off the light in a bathroom. 
+Turn on/off the light in a bathroom.   
 Class representing the device is the follwoing:
-class BathroomLight {
+```class BathroomLight {
   off()
   on()
   dim()
 }
+```
 
-Turn on/off a jacuzzi
+Turn on/off a jacuzzi  
 Representing class:
-class Jacuzzi {
+```class Jacuzzi {
   turnOn()
   turnOff()
   playMusic()
 }
+```
 
-Turn on/off a heating system
+Turn on/off a heating system  
 Representing class:
-class Heating {
+```class Heating {
   warmUp()
   warmDown()
   warmMax()
   off()
 }
+```
 
-Open/close a garage
+Open/close a garage  
 Representing class:
-class Garage {
+```class Garage {
   open()
   close()
 }
+```
 
-Open/close an entrance door
+Open/close an entrance door  
 Representing class:
-class Garage {
+```class Garage {
   open()
   close()
 }
+```
 
-Raise/lower blinds
+Raise/lower blinds  
 Representing class:
-class jalousie {
+```class jalousie {
   up()
   down()
 }
-
-Turn on/off a kettle
+```
+Turn on/off a kettle  
 Representing class:
-class Kettle {
+```class Kettle {
   on()
   off()
 }
-
+```
 The remote control has the following interface
-Control {
+```Control {
   add(position, actionOn, actionOff)
   printCommands() // чтобы показать, какие значения в каких ячейках пульта
   undo()
   performOn(position)
   performOff(position)
 }
-
+```
 There is the Undo operation button as well, which allows canceling the last eight operations.
 The validation of the button pressed should be implemented. If the pressed button does not exist there an exception with the appropriate message should be thrown.
 

@@ -8,7 +8,8 @@ Device Examples
 
 Turn on/off the light in a bathroom.   
 Class representing the device is the follwoing:
-```class BathroomLight {
+```
+class BathroomLight {
   off()
   on()
   dim()
@@ -17,7 +18,8 @@ Class representing the device is the follwoing:
 
 Turn on/off a jacuzzi  
 Representing class:
-```class Jacuzzi {
+```
+class Jacuzzi {
   turnOn()
   turnOff()
   playMusic()
@@ -26,7 +28,8 @@ Representing class:
 
 Turn on/off a heating system  
 Representing class:
-```class Heating {
+```
+class Heating {
   warmUp()
   warmDown()
   warmMax()
@@ -36,15 +39,16 @@ Representing class:
 
 Open/close a garage  
 Representing class:
-```class Garage {
+```
+class Garage {
   open()
   close()
 }
 ```
-
 Open/close an entrance door  
 Representing class:
-```class Garage {
+```
+class Garage {
   open()
   close()
 }
@@ -52,20 +56,23 @@ Representing class:
 
 Raise/lower blinds  
 Representing class:
-```class jalousie {
+```
+class jalousie {
   up()
   down()
 }
 ```
 Turn on/off a kettle  
 Representing class:
-```class Kettle {
+```
+class Kettle {
   on()
   off()
 }
 ```
 The remote control has the following interface
-```Control {
+```
+Control {
   add(position, actionOn, actionOff)
   printCommands() // чтобы показать, какие значения в каких ячейках пульта
   undo()
@@ -79,11 +86,13 @@ The validation of the button pressed should be implemented. If the pressed butto
 ### Implement the following:
 1. Create bootstrap classes for each type of available device. Every method has to indicate that it has been called by printing a suitable message.
 Example:
+```
 class Light {
   on() {
     print(‘Light on’)
   }
 }
+```
 2. Implement remote control classes based on the singleton pattern
 3. Provide an opportunity for the future adding actions conveniently (without rewriting much code)  
 
